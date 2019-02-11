@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> - BrutAstudios Entretainment - </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/Stylesindex.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <section>
+            <img src="">
+            <article>
+                    
+            </article>
+        </section>
+        <section>
+            <img src="Imagenes/Logo Blanco.png">
+        </section>
+    </header>
+    <div>
+        <section>
+            <video controls>
+
+            </video>
+        </section>
+        <section>
+            <article>
+                <a href="#" class="boton"  >
+                    <img src="Imagenes/guitarra.png">
+                    <h3> - Musica - </h3>
+                </a>
+            </article>
+            <article>
+                <a href="#" class="boton"  >
+                    <img src="Imagenes/reproductor-de-video.png">
+                    <h3> - Series - </h3>
+                </a>
+            </article>
+        </section>
+        <section>
+            <article>
+                <a href="#" class="boton" >
+                    <img src="Imagenes/consola.png">
+                    <h3> - Games - </h3>
+                </a>
+            </article>
+            <article>
+                <a href="#" class="boton" >
+                    <img src="Imagenes/pelicula.png">
+                    <h3> - Peliculas - </h3>
+                </a>
+            </article>
+        </section>
+        <section>
+            <article class="floor">
+                <a href="#">Suscribete</a>
+            </article>
+            <br>
+            <article class="floor">
+            <p> Brutastudios es una empresa independiente el contenido de todos sus productos estan ligados al sello de Brutastudios, todos los derechos reservados. La dibulgacion del contenido de esta pagina sin autorizacion sera penalizada segun las leyes de derechos de autor de cada país.</p>
+            </article>
+        </section>
+        <div id="IndexModal" class="modal" >
+            <div class="content">
+                <span class="close">&times;</span>
+                <p>Para disfrutar de nuestro contenido debes</p>
+                <h1>Ingresar</h1>
+                <form action="" method="POST">
+                    <label>Nombre de Usuario</label><br>
+                    <input type="text" name="usuario" required><br>
+                    <label>Contraseña</label><br>
+                    <input type="password" name="pass" required><br>
+                    <input id="submit" type="submit" value="Ingresar">
+                </form>
+                <p>¿No tienes una cuenta?</p>
+                <a href="Registro.html">Crea Una</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <article>
+
+        </article>
+        <article>
+            <a href="#"> Contacto <br> Brutastudios </a>
+        </article>
+        <article>
+
+        </article>
+    </footer>
+    <script>
+        var modal = document.getElementById('IndexModal');
+        var btn = document.getElementsByClassName('boton')[0];
+        var btn1 = document.getElementsByClassName('boton')[1];
+        var btn2 = document.getElementsByClassName('boton')[2];
+        var btn3 = document.getElementsByClassName('boton')[3];
+        var span = document.getElementsByClassName("close")[0];
+
+        btn.onclick = function()
+        {
+            modal.style.display = "block";
+        }
+
+        btn1.onclick = function()
+        {
+            modal.style.display = "block";
+        }
+        btn2.onclick = function()
+        {
+            modal.style.display = "block";
+        }
+        btn3.onclick = function()
+        {
+            modal.style.display = "block";
+        }
+
+        span.onclick= function()
+        {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event)
+        {
+            if(event.target == modal)
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
